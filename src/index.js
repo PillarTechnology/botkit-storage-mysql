@@ -195,7 +195,7 @@
 var mysql = require('mysql');
 
 module.exports = function (config) {
-  if (!config || !config.host) {
+  if (!config) {
     throw new Error('Need to provide MySQL connection information.');
   }
 
