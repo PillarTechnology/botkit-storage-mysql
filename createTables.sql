@@ -5,7 +5,7 @@ CREATE TABLE `botkit_user` (
   `team_id` char(9) NOT NULL,
   `user` varchar(36) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4639 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 
 CREATE TABLE `botkit_team` (
@@ -16,10 +16,10 @@ CREATE TABLE `botkit_team` (
   `token` varchar(51) NOT NULL,
   `bot` varchar(500) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4639 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
 
 CREATE TABLE `botkit_channel` (
   `id` char(9) NOT NULL,
   `json` MEDIUMTEXT NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4639 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
