@@ -226,6 +226,7 @@ module.exports = function (config) {
 
   var saveTeam = function (tableName) {
     return function (data, callback) {
+      var getTeam = get('botkit_team', dbToTeamJson);
       var dataToSave = {
         id: data.id,
         createdBy: data.createdBy,
@@ -234,7 +235,16 @@ module.exports = function (config) {
         token: data.token,
         bot: JSON.stringify(data.bot)
       };
-      save('INSERT into ' + tableName + ' SET ?', dataToSave, callback);
+      getTeam(dataToSave.id, function(err, teamData) {
+        if (!teamData) {
+          save('INSERT into ' + tableName + ' SET ?', dataToSave, callback);
+        } else {
+          var updateSql = 'UPDATE botkit_team SET createdBy = ?, name = ?, url = ?, token = ?, bot = ? WHERE id = ?';
+          var updateSqlData = [dataToSave.createdBy, dataToSave.name, dataToSave.url, dataToSave.token, dataToSave.bot, dataToSave.id];
+
+          save(updateSql, updateSqlData, callback);
+        }
+      });
     };
   };
 
