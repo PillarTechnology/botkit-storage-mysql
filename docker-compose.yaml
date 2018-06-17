@@ -1,0 +1,12 @@
+version: '2.1'
+
+services:
+  db:
+    image: mysql:5.7.21
+    volumes:
+      - ./createTables.sql:/docker-entrypoint-initdb.d/createTables.sql
+    environment:
+      MYSQL_DATABASE: tests
+      MYSQL_ROOT_PASSWORD: p@ssw0rd
+    ports:
+      - '3306:3306'
