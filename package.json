@@ -1,6 +1,6 @@
 {
   "name": "botkit-storage-mysql",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A MySQL storage driver for botkit",
   "main": "src/index.js",
   "scripts": {
