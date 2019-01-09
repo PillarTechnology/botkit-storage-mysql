@@ -7,7 +7,7 @@
     "test": "mocha "
   },
   "dependencies": {
-    "mysql": "2.10.2"
+    "mysql": "^2.16.0"
   },
   "repository": {
     "type": "git",
@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/getforgex/botkit-storage-mysql#readme",
   "devDependencies": {
-    "chai": "^3.5.0",
-    "mocha": "^2.4.5"
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0"
   }
 }
