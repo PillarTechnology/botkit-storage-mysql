@@ -19,7 +19,7 @@ var Botkit = require('botkit'),
     });
 ```
 
-##License
+## License
 
   This software is licensed under the Apache 2 license, quoted below.
 
