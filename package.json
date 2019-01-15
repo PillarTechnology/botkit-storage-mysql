@@ -19,12 +19,12 @@
     "mysql",
     "slack"
   ],
-  "author": "Jarred Olson <jolson@forgex.org> (http://www.forgex.org/)",
+  "author": "Jarred Olson <jarred.128@gmail.com>",
   "license": "Apache 2.0",
   "bugs": {
-    "url": "https://github.com/getforgex/botkit-storage-mysql/issues"
+    "url": "https://github.com/PillarTechnology/botkit-storage-mysql/issues"
   },
-  "homepage": "https://github.com/getforgex/botkit-storage-mysql#readme",
+  "homepage": "https://github.com/PillarTechnology/botkit-storage-mysql#readme",
   "devDependencies": {
     "chai": "^4.2.0",
     "mocha": "^5.2.0"
